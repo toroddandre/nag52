@@ -181,4 +181,19 @@ extern const int16_t R_UPSHIFT_TIME_MAP[SHIFT_TIME_MAP_SIZE];
 #define MAP_NAME_R_DOWNSHIFT_TIME "R_DNSHIFT_TIME"
 extern const int16_t R_DOWNSHIFT_TIME_MAP[SHIFT_TIME_MAP_SIZE];
 
+/*
+================================================================================
+
+   TORQUE TABLES
+
+================================================================================
+ */
+
+// -- Engine torque table for Hfm-ECUs or custom ECUs without torque models --
+#define TORQUE_HEADERS_MAP_NAME_SIZE 18u
+extern const char MAP_NAME_ENGINE_TORQUE_MAX[TORQUE_HEADERS_MAP_NAME_SIZE];
+#define TORQUE_MAP_SIZE 33u
+extern const int16_t ENGINE_TORQUE_MAP[TORQUE_MAP_SIZE];
+extern const int16_t ENGINE_TORQUE_HEADERS_MAP[TORQUE_MAP_SIZE];
+
 #endif
